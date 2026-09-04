@@ -8181,6 +8181,7 @@
 <a class="md-tag" href="../../../tags/#tag:slang">Slang</a>
 <a class="md-tag" href="../../../tags/#tag:compute">compute</a>
 <a class="md-tag" href="../../../tags/#tag:cuda">cuda</a>
+<a class="md-tag" href="../../../tags/#tag:gamma">gamma</a>
 <a class="md-tag" href="../../../tags/#tag:shader">shader</a>
 <a class="md-tag" href="../../../tags/#tag:shading">shading</a>
 </nav>
@@ -8227,6 +8228,12 @@
 <li>x86_64</li>
 <li>aarch64</li>
 </ul>
+<blockquote>
+<p><strong>Note:</strong> The IGX Thor iGPU platform is not supported. The Slang compiler bundled with <code>SlangShaderOp</code>
+emits PTX that the CUDA driver on the IGX Thor iGPU platform cannot load, and the application fails at startup with
+<code>the provided PTX was compiled with an unsupported toolchain. (222)</code>. See the
+<a href="../../../operators/slang_shader/#unsupported-platforms">SlangShaderOp documentation</a>.</p>
+</blockquote>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <ol>
 <li>Clone the HoloHub repository</li>
@@ -8293,13 +8300,13 @@
               </div>
 </div>
 </a>
-<a aria-label="Next: Slang Simple Compute Kernel (latest)" class="md-footer__link md-footer__link--next" href="../slang_simple/">
+<a aria-label="Next: Slang Simple Compute Kernel Example (latest)" class="md-footer__link md-footer__link--next" href="../slang_simple/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                Slang Simple Compute Kernel (latest)
+                Slang Simple Compute Kernel Example (latest)
               </div>
 </div>
 <div class="md-footer__button md-icon">
